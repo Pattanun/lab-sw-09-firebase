@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Lab 2SA09 - Firebase RTDB</title>
+
+    <!-- update the version number as needed -->
+    <script defer src="/__/firebase/7.2.3/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script defer src="/__/firebase/7.2.3/firebase-auth.js"></script>
+    <script defer src="/__/firebase/7.2.3/firebase-database.js"></script>
+    <script defer src="/__/firebase/7.2.3/firebase-messaging.js"></script>
+    <script defer src="/__/firebase/7.2.3/firebase-storage.js"></script>
+    <!-- initialize the SDK after all desired features are loaded -->
+    <script defer src="/__/firebase/init.js"></script>
+
+  </head>
+  <body>
+      <p id="status">Firebase SDK Loading&hellip;</p>
+
+    <div>
+      <from method="post" name="contactFrom">
+        <input type="text" placeholder="Name" id="name">
+        <input type="text" placeholder="Email" id="email">
+        <input type="text" placeholder="Phone" id="phone">
+        <button type="submit" class="addContact">Add</button>
+      </from>
+    </div>
+
+    <div>
+      <ul id="contacts">
+        <!-- contact list items will be added here -->
+      </ul>
+    </div>
+  
+
+  <script src="main.js"></script>
+  </body>
+</html>
